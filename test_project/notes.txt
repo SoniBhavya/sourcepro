@@ -1,0 +1,41 @@
+1. Django Installation Command:
+    pip install django
+
+2. Create a new project
+    django-admin startproject <project-name>
+
+3. Create an app inside the django project
+    python manage.py startapp <app-name>
+
+4. Add <app-name> in settings.py file
+
+5. Create a Database/Schema in mysql Server and Add mysql connection details in settings.py file
+        DATABASES = {
+       'default': {
+          'ENGINE': 'django.db.backends.sqlite3',
+          'NAME': 'database.sql',
+          'USER': '',
+          'PASSWORD': '',
+          'HOST': '',
+          'PORT': '',
+       }
+    }
+
+6. Install MYSQL Client.
+    pip install mysqlclient
+
+7. Command To run django
+    python manage.py runserver
+
+8. Commands for migration.
+    python manage.py makemigrations
+    python manage.py migrate
+
+9. Create superuser.
+    python manage.py createsuperuser
+
+10. Create a requirements.txt file and add all the installed python libraries
+
+DJANGO URL flow.
+
+DJANGO Model Creation

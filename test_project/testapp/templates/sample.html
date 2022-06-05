@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+
+</head>
+
+<body>
+    <form method = "POST">
+        {%csrf_token%}
+        <div>
+
+            <label>first mail</label>
+            <input type="text" name="mailone">
+
+            <label>second mail</label>
+            <input type="text" name="mailtwo" value="{{result}}">
+
+            {{result}}
+        </div>
+        </br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>

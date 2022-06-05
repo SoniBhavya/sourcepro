@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login pagee</title>
+</head>
+<body>
+<form method = "POST">
+        {%csrf_token%}
+        <div>
+
+            <label> email</label>
+            <input type="text" name="u_name">
+
+            <label>password</label>
+            <input type="text" name="password">
+
+        </div>
+        </br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
